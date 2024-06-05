@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  	text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+	
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	
+	
+}
+/*---header---*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background:#000;
+}
+
+.header img {
+  width:100px;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  background: #f00;
+  transform: translatey(5px);
+	transition: transform 0.2s;
+}
+
+
+
+/*---contact---*/
+.contact{
+	margin-top: 80px;
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(../images/36.jpg);
+	background-size: cover;
+
+}
+.contact .content{
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	padding: 0px 25px;
+	padding-bottom: 30px;
+}
+.contact .content h2{
+	font-size: 36px;
+	font-weight: 500;
+	color: navajowhite;
+}
+.contact .content p{
+	font-weight: 300;
+	color:#fff;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	max-width: 1300px;
+	margin: auto; 
+}
+.container .contactinfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+ .container .contactinfo .box{
+	 position: relative;
+	 padding: 20px 0;
+	 display: flex;
+ }
+ .container .contactinfo .box .icon{
+	min-width: 50px;
+	height: 50px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+	cursor: pointer;
+	
+ }
+
+
+ .container .contactinfo .box .text{
+	 display: flex;
+	 margin-left: 20px;
+	 font-size: 16px;
+	 color: #fff;
+	 flex-direction: column;
+	 font-weight: 300;
+ }
+ .container .contactinfo .box .text h1{
+	 font-weight: 500;
+	 color: #00bcd4;
+ }
+ .contactform{
+	 width: 40%;
+	 padding:40px;
+	 background: #fff;
+ }
+ .contactform h2{
+	 font-size: 30px;
+	 color: #333;
+	 font-weight: 500;
+ }
+.contactform .inputbox{
+	position: relative;
+	width:100%;
+	margin-top:10px;
+} 
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size:16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+	
+}
+.contactform .inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size:16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span
+{
+	color: #e91e63;
+	font-size: 0px;
+	transform: translate(20px);
+}
+.contactform .inputbox [type="submit"]{
+	width:100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+/*--end---*/
+/*---star-footer---*/
+footer{
+	background:#000;
+	width: 100%;
+}
+
+footer .ft{
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer .ft h3 {
+	color: #fff;
+	padding-bottom: 15px;
+}	
+footer .ft p{
+	color:  #8a8a8a;
+	padding-top: 10px;
+}
+.ft-2{
+	font-weight: 400;
+	width: 350px;
+	text-align: center;
+}
+.ft-2 img{
+	width: 130px;
+	cursor: pointer;
+}
+.app-logo{
+	margin-top: 20px;
+	display: flex;
+	column-gap: 5px;
+}
+.app-logo img{
+	width: 140px;	
+}
+ul{
+	list-style-type: none;
+}
+.ft-4 ul a{
+	color: #8a8a8a;
+}
+.ft-3 ul a{
+	color: #8a8a8a;
+}
+
+footer hr{
+	border: none;
+	background:#b5b5b5;
+	height:1px;
+	margin:auto;
+	max-width: 1300px;
+	
+}
+footer .copyright{
+	text-align:center;
+	color: #8a8a8a;
+}
+@media(max-width: 991px){
+	header{
+
+	}
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactinfo{
+		margin-bottom: 40px;
+	}
+	.container .contactinfo,
+	.contactform
+	{
+		width: 100%;
+	}
+}
